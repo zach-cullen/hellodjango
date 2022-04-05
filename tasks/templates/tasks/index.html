@@ -1,5 +1,8 @@
 {% extends "tasks/layout.html" %}
 
+{% block nav %}
+  <a href="{% url 'tasks:add' %}">Add Task</a>
+{% endblock %}
 {% block body %}
   <h1>Tasks</h1>
   <ul>
@@ -7,4 +10,4 @@
       <li>{{ task }}</li>
     {% endfor %}
   </ul>
-{% enblock %}
+{% endblock %}

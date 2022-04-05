@@ -1,5 +1,7 @@
 {% extends "tasks/layout.html" %}
-
+{% block nav %}
+  <a href="{% url 'tasks:index' %}">All Tasks</a> 
+{% endblock %}
 {% block body %}
   <h1>Add Task</h1>
   <form>
